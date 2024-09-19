@@ -37,7 +37,7 @@ ol {
   font-weight: 700;
 }
 .sub-title {
-  color: #ffca2c;
+  color: var(--third-color);
   font-size: 14px;
   font-weight: 600;
 }
@@ -268,7 +268,15 @@ main {
   display: flex;
   justify-content: center;
 }
-
+.service-banner {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 0%,
+    var(--third-color) 100%
+  );
+  padding: 80px 0;
+  background: var(--secondary-color);
+}
 /* GALLERY SECTION */
 
 ul {
@@ -288,7 +296,8 @@ figure {
   overflow: hidden;
 }
 figure img {
-  width: 100%;
+  width: 400px !important;
+  height: 300px !important;
   transition: 0.3s;
 }
 figure::after {
@@ -360,7 +369,7 @@ a:is(:hover, :focus) figcaption {
 }
 .show-btn,
 .call-now-btn {
-  background: var(--secondary-color) !important;
+  background: var(--third-color) !important;
 }
 .show-btn:hover,
 .call-now-btn:hover {
@@ -404,7 +413,7 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-  background: var(--secondary-color);
+  background: var(--third-color);
   margin: 2em 0 0 0;
   color: white;
   border: none;
@@ -446,7 +455,7 @@ input[type="submit"]:hover {
 /* ---------------------------------footer starts------------------------- */
 
 .footer-btn {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border: none !important;
   border-radius: 20px;
   font-weight: 500;
@@ -485,7 +494,10 @@ footer .container {
   display: block;
   text-align: left;
 }
-
+.footer-logo-tagline {
+  margin-top: -40px;
+  letter-spacing: 3px;
+}
 .footer-bottom .logo-sec p {
   color: #b8b8b8;
 }
